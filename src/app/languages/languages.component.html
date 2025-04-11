@@ -1,1 +1,10 @@
-<p>languages works!</p>
+<section>
+  <h2>Idiomas</h2>
+  <ul>
+    <li *ngFor="let language of languagesList">
+      <b>{{ language.lenguaMaterna }}</b><br>
+      {{ language.other }}
+    </li>
+  </ul>
+</section>
+
