@@ -9,7 +9,10 @@ import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { LanguagesComponent } from './languages/languages.component';
-import { InterestComponent } from './interest/interest.component';
+import { InterestsComponent } from './interest/interest.component';
+
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,12 @@ import { InterestComponent } from './interest/interest.component';
     SkillsComponent,
     CertificatesComponent,
     LanguagesComponent,
-    InterestComponent
+    InterestsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
   bootstrap: [AppComponent]

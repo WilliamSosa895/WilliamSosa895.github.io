@@ -1,1 +1,11 @@
-<p>education works!</p>
+<section>
+  <h2>Educación</h2>
+  <ul>
+    <li *ngFor="let edu of educationList">
+      {{ edu.startDate }} - {{ edu.endDate }}<br>
+      <b>{{ edu.name }}</b><br>
+      {{ edu.plantel }}<br>
+    </li>
+  </ul>
+</section>
+
