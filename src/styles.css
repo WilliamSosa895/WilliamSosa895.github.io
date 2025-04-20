@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+/* Fondo y configuración general */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #0f172a; /* Azul programador */
+    font-family: 'Segoe UI', sans-serif;
+    color: #e2e8f0; /* Texto principal en gris muy claro */
+  }
+  
+  /* Contenedor tipo hoja con borde flotante */
+  .cv-page {
+    width: 80vw; /* Ancho de la hoja */
+    height: 90vh; /* Alto de la hoja */
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: transparent; /* Fondo transparente para la hoja */
+    overflow-y: auto;
+  
+    /* Borde flotante suave y sombra */
+    border: 2px solid #4a5568; /* Borde gris suave */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra sutil debajo */
+    margin: 50px auto; /* Centrado en la página con margen desde arriba */
+  }
+  
+  /* Tabla general */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Eliminar bordes y sombras en las celdas de la tabla */
+  td, tr {
+    padding: 15px;
+    background-color: transparent; /* Sin color de fondo en las celdas */
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+  }
+  
+  /* Estilo de encabezados */
+  h1, h2, h3 {
+    color: #34d399; /* Verde menta */
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo de texto destacado */
+  strong {
+    color: #f472b6; /* Rosa neón suave */
+  }
+  
+  /* Imagen del header */
+  img {
+    border-radius: 50%;
+    border: 4px solid #34d399; /* Borde en verde menta */
+    box-shadow: 0 4px 12px rgba(52, 211, 153, 0.3);
+  }
+  
+  /* Para enlaces y redes sociales */
+  a {
+    color: #f472b6; /* Rosa neón suave para links */
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #fb7185; /* Rosa más brillante al pasar el mouse */
+  }
+  
+  /* Eliminar bordes de los componentes */
+  app-header, app-work-experience, app-skills, app-education, app-certificates, app-languages, app-interests {
+    border: none;
+    box-shadow: none;
+  }
+  
+  
+  
