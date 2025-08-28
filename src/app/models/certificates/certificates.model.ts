@@ -1,6 +1,5 @@
 export class Certificates {
-    id?: string;
-    name?: string = 'name';
-    tipo?: string = 'tipo';
-    fecha?: string = 'mes-yyyy';
-  }
+  id?: string;
+  name?: string;
+  certificateURL?: string;
+}
